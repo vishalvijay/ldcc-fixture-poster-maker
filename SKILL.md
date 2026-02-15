@@ -63,11 +63,27 @@ print('Resized to 1012x1280')
 "
 ```
 
-**Step 4: (Future) Logo replacement via vision library**
-- Vision AI detects placeholder text boxes
-- Replaces "DESPERADOS LOGO" with actual Desperados shield
-- Replaces "KODEKLOUD LOGO", "RAYYAN LOGO", "GLOBAL SPORTS LINK LOGO" with actual sponsor logos
-- Preserves layout and dimensions
+**Step 4: Overlay real logos with vision-assisted precision**
+- Use vision model to detect placeholder coordinates
+- Run the post-processing script to erase text and apply high-res logos
+
+```bash
+cd /data/.openclaw/workspace/skills/ldcc-fixture-poster-maker/scripts
+# 1. Get coords JSON from vision model
+# 2. Run overlay
+python3 overlay_logos.py \
+  /data/.openclaw/workspace/cricket-poster-generator/output/fixture-temp.png \
+  vision_coords.json \
+  /data/.openclaw/workspace/cricket-poster-generator/output/fixture-YYYY-MM-DD-BRANDED.png
+```
+
+## Logo Assets
+
+Located in `assets/`:
+- `desperados.png` (LDCC Shield)
+- `kodekloud.png`
+- `rayyan.png`
+- `globalsports.png`
 
 ## Prompt Templates
 
