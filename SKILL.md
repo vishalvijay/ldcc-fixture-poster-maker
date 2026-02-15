@@ -22,7 +22,9 @@ Generate professional fixture posters for London Desperados CC using Nano Banana
 - Home/Away: HOME = LDCC left, AWAY = LDCC right
 
 **Branding:**
-- Desperados shield logo, sponsor logos (KodeKloud, Rayyan, Global Sports Link)
+- Logo placeholders with text labels for vision-based replacement:
+  - "DESPERADOS LOGO" (top banner)
+  - "KODEKLOUD LOGO", "RAYYAN LOGO", "GLOBAL SPORTS LINK LOGO" (bottom sponsor boxes)
 - www.londondesperados.com | @londondesperados | LIVE STREAMING badge
 
 ## Design Learnings
@@ -37,7 +39,7 @@ Generate professional fixture posters for London Desperados CC using Nano Banana
 
 **Step 1: Count matches and parse fixture details**
 
-**Step 2: Generate at 2K resolution**
+**Step 2: Generate at 2K resolution with logo placeholders**
 ```bash
 cd /data/.openclaw/workspace/cricket-poster-generator
 python3 /data/.openclaw/workspace/skills/nano-banana-pro/scripts/generate_image.py \
@@ -58,6 +60,12 @@ print('Resized to 1012x1280')
 "
 ```
 
+**Step 4: (Future) Logo replacement via vision library**
+- Vision AI detects placeholder text boxes
+- Replaces "DESPERADOS LOGO" with actual Desperados shield
+- Replaces "KODEKLOUD LOGO", "RAYYAN LOGO", "GLOBAL SPORTS LINK LOGO" with actual sponsor logos
+- Preserves layout and dimensions
+
 ## Prompt Templates
 
 ### Single Match Design
@@ -67,7 +75,7 @@ Create a PORTRAIT cricket fixture poster with modern luxury design and bold impa
 
 Elegant dark black background with ornate gold cricket elements (bat, ball, stumps, cricket ball seam patterns) in decorative curves at corners.
 
-Top: Red angled banner (dynamic diagonal right edge) with Desperados shield logo on left, large bold gold 'WEEKEND FIXTURE' text in premium sports font.
+Top: Red angled banner (dynamic diagonal right edge) with white angled box on left containing text 'DESPERADOS LOGO' in bold black font, large bold gold 'WEEKEND FIXTURE' text in premium sports font on right.
 
 SINGLE MATCH - modern angled bar design with BOLD IMPACTFUL FONTS:
 Red angled banner (sharp slanted edges): '[DAY] [DATE] | [TEAM/FORMAT]' in bold white condensed sports font
@@ -77,7 +85,11 @@ Large [COLOR] angled bar with dynamic diagonal edges (NOT straight boxes):
 
 White angled bar below with diagonal edges: 'Venue: [VENUE] ([HOME/AWAY])' in bold black condensed font
 
-Bottom section: Three sponsor logos in white angled boxes with diagonal edges (KodeKloud, Rayyan, Global Sports Link)
+Bottom section: Three white angled boxes with diagonal edges containing text placeholders in bold black font:
+Left box: 'KODEKLOUD LOGO'
+Middle box: 'RAYYAN LOGO'
+Right box: 'GLOBAL SPORTS LINK LOGO'
+
 Footer: 'WWW.LONDONDESPERADOS.COM' and '@LONDONDESPERADOS' in bold white font
 'LIVE STREAMING' badge with play button bottom right corner
 
@@ -91,7 +103,7 @@ Design: Premium modern angled geometric design with BOLD IMPACTFUL TYPOGRAPHY, N
 ```
 Create a PORTRAIT weekend fixture poster for Instagram with [EXACTLY TWO/THREE/FOUR] match cards stacked vertically on an elegant DARK BLACK background with subtle gold cricket elements (bat, ball, stumps):
 
-Top: Red angled banner with Desperados shield logo left, large gold 'WEEKEND FIXTURE' text
+Top: Red angled banner with white angled box on left containing text 'DESPERADOS LOGO' in bold black font, large gold 'WEEKEND FIXTURE' text on right
 
 CARD 1 ([HOME/AWAY] - blue/cyan theme with angled edges):
 Red angled banner: '[DAY] [DATE] | [TEAM NAME] - [FORMAT]'
@@ -105,7 +117,11 @@ White angled bar: 'VENUE: [VENUE] ([HOME/AWAY])' in black
 
 [Add CARD 3 (orange) and CARD 4 (purple) with same structure as needed]
 
-Bottom: Three sponsor logos in white angled boxes (KodeKloud, Rayyan, Global Sports Link)
+Bottom: Three white angled boxes with diagonal edges containing text placeholders in bold black font:
+Left box: 'KODEKLOUD LOGO'
+Middle box: 'RAYYAN LOGO'
+Right box: 'GLOBAL SPORTS LINK LOGO'
+
 Footer: 'WWW.LONDONDESPERADOS.COM' and '@LONDONDESPERADOS' in white
 'LIVE STREAMING' badge with play button bottom right
 
