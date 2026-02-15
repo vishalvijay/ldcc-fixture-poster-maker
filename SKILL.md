@@ -30,10 +30,13 @@ Generate professional fixture posters for London Desperados CC using Nano Banana
 ## Design Learnings
 
 **User Preferences (Feb 2026):**
-- **"More stylish"** = darker/richer backgrounds + bold premium fonts + ornate decorative elements
-- **NO white background sections** in multi-match posters - use dark elegant backgrounds throughout
-- **Typography matters** - emphasize "BOLD IMPACTFUL TYPOGRAPHY" and "premium sports font" in prompts
-- **Decorative elements** - add "ornate gold cricket elements" for luxury aesthetic
+- **Backgrounds**: Use a STUNNING VIBRANT GRADIENT (e.g., Deep Midnight Blue to Electric Purple) with abstract light streaks and modern geometric glow effects. Avoid literal cricket patterns or plain gray/black.
+- **Typography**: Team names must use EXTRA BOLD 3D stylized text with thick black outline strokes (sports broadcast/impact style).
+- **Top Banner**: Red angled banner. MUST include a distinct SQUARE white box on the left for the "DESPERADOS LOGO".
+- **Card Content**: Use "MATCH 1", "MATCH 2" etc. for labels. Avoid "Card 1/Card 2".
+- **Textures**: Use subtle modern textures (tech-mesh, carbon-fiber) inside the team name background bars to add depth.
+- **Vibe**: High-energy, modern, and creative sports poster. Avoid "luxury/ornate/elegant" gold elements or cluttered patterns.
+- **Layout**: Clean angled geometric design with no straight rectangular boxes. PORTRAIT orientation for Instagram (1012x1280).
 
 ## Workflow
 
