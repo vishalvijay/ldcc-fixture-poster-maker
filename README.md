@@ -23,7 +23,7 @@ Automated poster generation combining AI image generation (Nano Banana Pro) with
 - OpenClaw installed and configured
 - [nano-banana-pro skill](https://clawhub.com) (Gemini 3 Pro Image generation)
 - Python 3 with PIL/Pillow
-- Vision model access
+- Vision model access (Gemini 3 Flash Preview recommended)
 
 ## Installation
 
@@ -78,7 +78,7 @@ The agent will:
 
 2. **Resize:** Python/PIL resizes to exact Instagram dimensions (1012x1280)
 
-3. **Vision Detection:** Use vision model to identify bounding boxes for all placeholders
+3. **Vision Detection:** Use vision model (Gemini 3 Flash Preview) to identify bounding boxes for all placeholders
 
 4. **Logo Overlay:** Post-processing script (`scripts/overlay_logos.py`):
    - Erases placeholder text (white pixel detection)

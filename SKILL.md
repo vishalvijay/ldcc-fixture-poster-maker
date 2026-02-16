@@ -40,6 +40,8 @@ Generate professional fixture posters for London Desperados CC using Nano Banana
 
 ## Workflow
 
+**Vision Model:** Use `google/gemini-3-flash-preview` for coordinate detection (fast, cost-effective)
+
 **Step 1: Count matches and parse fixture details**
 
 **Step 2: Generate at 2K resolution with logo placeholders**
