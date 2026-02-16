@@ -11,7 +11,7 @@ Automated poster generation combining AI image generation (Nano Banana Pro) with
 - ✅ Generates 1-4 match fixture posters
 - ✅ Modern vibrant gradient backgrounds with bold 3D typography
 - ✅ AI-generated layout with text placeholders
-- ✅ Vision-based coordinate detection (Claude Sonnet 4.5)
+- ✅ Vision-based coordinate detection
 - ✅ Automated logo overlay with smart text erasure
 - ✅ Exact dimensions: 1012x1280 pixels (Instagram portrait)
 - ✅ Red/white Desperados branding
@@ -23,7 +23,7 @@ Automated poster generation combining AI image generation (Nano Banana Pro) with
 - OpenClaw installed and configured
 - [nano-banana-pro skill](https://clawhub.com) (Gemini 3 Pro Image generation)
 - Python 3 with PIL/Pillow
-- Vision model access (anthropic/claude-sonnet-4-5 recommended)
+- Vision model access
 
 ## Installation
 
@@ -64,7 +64,7 @@ The agent will:
 1. Parse fixture details and count matches
 2. Generate poster with text placeholders at 2K resolution
 3. Resize to exactly 1012x1280 pixels
-4. Use vision model (Sonnet 4.5) to detect placeholder coordinates
+4. Use vision model to detect placeholder coordinates
 5. Erase placeholder text and overlay real high-res logos
 6. Send back the Instagram-ready branded PNG
 
@@ -78,7 +78,7 @@ The agent will:
 
 2. **Resize:** Python/PIL resizes to exact Instagram dimensions (1012x1280)
 
-3. **Vision Detection:** Claude Sonnet 4.5 identifies bounding boxes for all placeholders
+3. **Vision Detection:** Use vision model to identify bounding boxes for all placeholders
 
 4. **Logo Overlay:** Post-processing script (`scripts/overlay_logos.py`):
    - Erases placeholder text (white pixel detection)
